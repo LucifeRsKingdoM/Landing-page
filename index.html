@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA SPACES PVT LIMITED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Orbitron:wght@400..900&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        
+        /* CSS styles */
+
+        body, header {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            width: 100%;
+            height: 100vh; /* Full height of viewport */
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.0)),url('https://th.bing.com/th/id/R.187af4a1d1ac2a7bd6e46a4fc61f45fb?rik=144NKdINx5Ac%2bw&riu=http%3a%2f%2fphilipbarron.net%2fwp-content%2fuploads%2f2017%2f11%2fDelahunt-Homes_West-Linn-Custom-built-home-exterior.jpg&ehk=xh4FBIb31M71%2fQxo4G64uZHlk2R8D6jxXNnb7Aaibc8%3d&risl=&pid=ImgRaw');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .link {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            margin: 15px;
+            padding-left: 1000px;
+            margin: 50px;
+            letter-spacing: 2px;
+        }
+
+        .link a {
+            text-decoration: none;
+            color: inherit;
+            margin: 10px;
+            color: rgb(238, 255, 0);
+            position: relative;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .link a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 5px solid rgb(255, 2, 2);
+            transition: 0.4s linear;
+        }
+
+        .link a:hover::before {
+            width: 100%;
+        }
+        .link a:hover {
+             color: rgb(255, 42, 0); /* Change color on hover */
+             text-shadow: 10 10 10px rgb(255, 27, 2); 
+        }
+
+        p {
+            font-size: 2em;
+            letter-spacing: 2px;
+            padding-left: 50px;
+            background: rgb(53, 53, 182);
+            color: rgb(26, 255, 0);
+        }
+        
+        h1, h2, h4 {
+            margin: 0;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 70px;  
+            margin-bottom: 20px;
+            display: flex;
+            padding-left: 50px; 
+            color: rgb(9, 232, 253); 
+            letter-spacing: 10;
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            position: relative;
+        }
+
+        h4 {
+            font-size: 30px;
+            margin: 80px;
+            padding-left: 250px;
+            color: rgb(0, 255, 0);
+            letter-spacing: 3px;
+            align-items: center;
+            font-family: "Acme", sans-serif;
+        }
+
+        .section {
+            height: 100vh;
+        }
+
+        #benefits {
+            background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.0)),url('https://th.bing.com/th/id/OIP.caj8Ksnl2ZQ8jwJKhpLX-gHaEK?rs=1&pid=ImgDetMain');
+            background-size: cover;
+            background-position: center;
+        }
+
+        #services {
+            background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url('https://jooinn.com/images/blurred-background-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: #929292;
+        }
+
+        #contact{
+            height: 740px;
+            background: url('https://static.vecteezy.com/system/resources/previews/022/229/063/non_2x/wooden-board-empty-table-top-blurred-background-perspective-brown-wood-table-over-blur-city-building-view-background-generative-ai-free-photo.jpeg'   );
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+
+        .name {
+            font-size: 50px;
+            padding-left: 215px;
+            padding-top: 40px;
+            color: #0fdbf2;
+            letter-spacing: 10px;
+            font-family: "Orbitron", sans-serif;
+            align-items: center;
+            transition: 0.4s linear;
+            padding-left: 220px;
+        }
+
+        .fax a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #0fdbf2;
+            padding: 10px 20px;
+            font-size: 35px;
+            font-family: "Titan One", sans-serif;
+            border-radius: 8px;
+            transition: 0.4s;
+            margin: 10%;
+        }
+
+        .fax a:hover {
+            background: transparent;
+            border: 1cap solid;
+            border-radius: 100px;
+            color:rgb(0, 213, 255); 
+            border-color: rgb(225, 233, 18);
+        }
+
+        .form-box {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            font-size: 24px;
+            margin: 20px;
+            flex: 1; /* Equal size for both boxes */
+            max-width: 50%; /* To make them bigger */
+        }
+
+        .form-box:nth-child(odd) {
+            margin-right: 10px;
+        }
+
+        .form-box:nth-child(even) {
+            margin-left: 10px;
+        }
+        /* Media queries for responsiveness */
+
+        @media (max-width: 768px) {
+            .name {
+                padding-left: 20px;
+            }
+            h4 {
+                padding-left: 20px;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+
+        .left-column{
+            padding-bottom: 500px;
+            padding-left: 200px;
+            max-width: 100px;
+        }
+        .right-column{
+            color: #0fdbf2;
+            padding: 50px;
+            padding-left: 900px;
+            padding-top: 200px;
+        }
+        p1{
+            font-size: 2em;
+            letter-spacing: 2px;
+            padding-left: 50px;
+            background: rgb(176, 177, 175);
+            color: rgb(239, 93, 15);
+        }
+
+        p2{
+            color: rgb(234, 233, 239);
+            font-size: large;
+        }
+        p4{
+            color: brown;
+            font-size: 40px;
+            padding-top: 100%;
+            padding-left: 500px;
+            
+        }
+       
+        .box p5 {
+            letter-spacing: 5px;
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.5;
+            justify-content: center;
+            margin: 2px; /* Increase margin to expand the inside part */
+            font-size: 40px; 
+            margin-bottom: 125px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box1 p5{
+            font-size: 30px;
+            line-height: 1.9;
+            margin: 2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button {
+            background-color: #0fdbf2;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .container {
+            display: flex;
+        }
+      
+        .box {
+            width: 40%; /* Adjust width to fit within hover border */
+            height: 40%;
+            padding: 50px; /* Keep the padding as it was */
+            border: 5px solid;
+            border-color: black;
+            border-radius: 10px;
+            transition: border-color 0.3s ease-in-out;
+            max-width: 50%;
+            margin: 50px;
+            margin-top: 50px;
+            padding-top: 15px;
+            transition: 0.4s;
+            background-image: url('https://th.bing.com/th/id/OIP.MGjzwtZRhfSWS9yMYEzgBwHaEo?rs=1&pid=ImgDetMain');
+            background-size: cover;
+        }
+        .box:hover {
+            border: 1cap solid;
+            border-radius: 100px;
+            border-color: rgb(246, 255, 0);
+            
+        }
+        .box1 {
+            width: 100%; /* Adjust width to fit within hover border */
+            height: 1%;
+            padding: 70px; /* Keep the padding as it was */
+            border: 5px solid;
+            border-color: black;
+            border-radius: 10px;
+            transition: border-color 0.3s ease-in-out;
+            max-width: 100%;
+            margin: 80px;
+            margin-top: 100px;
+            padding-top: 410px;
+            transition: 0.4s;
+            margin-right: 400px;
+            background-image: url('https://th.bing.com/th/id/OIP.MGjzwtZRhfSWS9yMYEzgBwHaEo?rs=1&pid=ImgDetMain');
+            background-size: cover;
+        }
+        .box1:hover {
+            border: 1cap solid;
+            border-radius: 100px;
+            border-color: rgb(61, 226, 24);
+        
+        }
+        .box {
+            border-color: #000000;
+            transition: transform 0.8s ease; /* Add transition property */
+            transform: translateY(-100%) scale(0.0); /* Initial position outside the viewport */
+        }
+
+        .section:hover .box {
+            transform: translateY(0) scale(1); /* Move the box to its original position on hover */
+        }
+
+        .box1 {
+            border-color: #000000;
+            transition: transform 0.8s ease; /* Add transition property */
+            transform: translateY(-100%) scale(0.0); /* Initial position outside the viewport */
+        }
+
+        .section:hover .box1 {
+            transform: translateY(0) scale(1); /* Move the box to its original position on hover */
+        }
+
+        .contact-form{
+            display: flex;
+            align-items: center;
+            width: 220px;
+            height: 300px;
+            padding: 50px; 
+            border: 5px solid #c71818;
+            margin-top:  -100px;
+            justify-content: center;
+        }
+        .contact-form:hover {
+            border: 1cap solid;
+            border-radius: 100px;
+            border-color:#333;
+        }
+        .contact-form label {
+            margin-bottom: 10px; /* Add spacing between labels */
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%; /* Make inputs full width */
+            padding: 10px; /* Add padding for better appearance */
+            margin-bottom: 20px; /* Add spacing between inputs */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px; /* Add border radius */
+        }
+
+        .contact-form textarea {
+            height: 50px; /* Set textarea height */
+        }
+
+        .contact-form button[type="submit"] {
+            background-color: #0fdbf2; /* Button background color */
+            color: #fff; /* Button text color */
+            padding: 20px 50px; /* Button padding */
+            font-size: 20px; /* Button font size */
+            border-radius: 20px; /* Add border radius */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            margin-left: 35px;
+            margin-bottom: 10px;
+
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background-color: #00ff00; /* Change background color on hover */
+
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .social-icons {
+            align-items: center;
+            width: 200px;
+            height: 110px;
+            padding: 50px; 
+            border: 5px solid #c71818;
+            margin-top:  -360px;
+            justify-content: space-around;
+        }
+        .social-icons:hover { 
+            border: 2cap solid;
+            border-radius: 100px;
+            border-color: rgb(0, 0, 0);
+        }
+        .social-icons a {
+            margin :  9px; /* Adjust margin between icons */
+        }
+        .benefits-box {
+            display: flex;
+            font-size: 40px;
+            padding: 100px;
+            border: 5px;
+            border-color: #c71818;
+            transition: transform 0.8s ease; /* Add transition property */
+            transform: translateX(-100%); /* Initial position outside the viewport */
+        }
+
+        .section:hover .benefits-box {
+            transform: translateX(0); /* Move the box to its original position on hover */
+        }
+
+        .featured-box {
+            display: block;
+            font-size: 40px;
+            padding: 100px;
+            border: 5px;
+            border-color: #c71818;
+            transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition property */
+            transform: translateX(100%); /* Initial position outside the viewport */
+            opacity: 0; /* Initially hidden */
+            position: absolute;
+            right: 0;
+            top: 210%;
+            bottom: 50%;
+            transform: translate(100%, -50%); /* Set initial position to the right */
+        }
+
+        .section:hover .featured-box {
+            transform: translate(0%, -50%); /* Move the box to its original position on hover */
+            opacity: 1; /* Show the box */
+        }
+
+        .benefits-image {
+            position: absolute;
+            top: 120%;
+            right: 10%; /* Adjust as needed */
+            transform: translateX(100%) scale(0.0); /* Set initial position and scale */
+            transition: transform 0.5s ease; /* Add transition property */
+        }
+
+        .section:hover .benefits-image {
+            transform: translateX(0) scale(1); /* Move the image to its original position and scale */
+        }
+        .services-image {
+            position: absolute;
+            top: 230%;
+            left: 10%; /* Adjust as needed */
+            transform: translateX(-100%) scale(0.0); /* Set initial position and scale */
+            transition: transform 0.5s ease; /* Add transition property */
+        }
+
+        .section:hover .services-image {
+            transform: translateX(0) scale(1); /* Move the image to its original position and scale */
+        }
+        .benefits-image img {
+            width: 400px; /* Adjust the size of the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 60px; /* Add border radius if needed */
+            box-shadow: 0 0 60px rgb(0, 251, 255); 
+        }
+
+        .services-image img {
+            width: 450px; /* Adjust the size of the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50px; /* Add border radius if needed */
+            box-shadow: 0 0 50px rgb(0, 251, 255); 
+        }
+        /* Add hover glow effect for images */
+        .benefits-image  img:hover{
+            box-shadow: 0 0 100px rgb(0, 251, 255);
+        }
+        .services-image img:hover {
+            box-shadow: 0 0 100px aqua; 
+        }
+
+        #benefits ul,#services ul {
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+        }
+        .change-color {
+            color: red; /* Change to the desired color */
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="link">
+    <a href="#home">HOME</a>
+    <a href="#benefits">BENEFITS</a>
+    <a href="#services">SERVICES</a>
+    <a href="#contact">CONTACT US</a>
+</div>
+<section id="home">
+<header>
+    <p> A-LPH-A </p>
+
+    <div id="alpha-spaces" class="name">
+        ALPHA - SPACES PVT LIMITED
+    </div>
+    <h4>Transform Your Home with Smart Organization Solutions</h4>
+    <section class="fax">
+        <a id="appointments-link" href="#contact">BOOK YOUR APPOINTMENTS</a>
+    </section>
+</header>
+</section>
+<section id="benefits" class="section"><br>
+    
+    <div class="benefits-box">
+        <ul>
+            <h2>--- Key Benefits</h2>
+            <br>
+            <br>
+            <li>Declutter Your Space</li>
+            <br>
+            <li>Find Things Easily</li>
+            <br>
+            <li>Boost Productivity</li>
+            <br>
+            <li>Enhance Home Aesthetics</li>
+        </ul>
+    </div>
+    <div class="benefits-image">
+        <img src="https://th.bing.com/th/id/R.cf67db9843998dd514bf059a8f95c21a?rik=17rXtw8Uz5jJEg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-2DWP71MzM4E%2fUt7N23mRLnI%2fAAAAAAAAAVE%2fHTsvz18aO-w%2fs1600%2fHome-organization-solutions.jpg&ehk=XaAJ5xbdk8ek%2fQfD3muETqg9pwssJeVti%2fwUrCrXSyc%3d&risl=&pid=ImgRaw&r=0" alt="Image Description">
+    </div>
+</section>
+
+<section id="services" class="section">
+    <div class="services-image">
+        <img src=https://i.pinimg.com/originals/3b/52/f6/3b52f60fbb42c135d27eaead6335272e.png alt="Image Description">
+    </div>
+    <br>
+    <div class="featured-box">
+        <ul>
+        <h2>Featured Services</h2>
+        <br>
+        <br>
+        <li>Closet Organizers</li>
+        <br>
+        <li>Storage Containers</li>
+        <br>
+        <li>Decluttering Services</li>
+        <br>
+        <li>Home Office Organization</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    
+    <div class="container">
+        <h3>Ready <br> to <br> transform <br> your <br> home <br> ?</h3>
+        <div class="box">
+            <p5>--For Bookings</p5>
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="return submitForm()">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" name="name" required placeholder="Enter Your Name">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" name="email" required placeholder="Enter Your Email">
+                    <label for="message"><b>Address</b></label>
+                    <textarea name="message" required placeholder="Drop your Location here"></textarea>
+                    <button type="submit">Book</button>
+                </form>
+            </div>
+        </div>
+        <div class="box1">
+            <p5>You can also reach us on</p5>
+            <div class="social-icons">
+                <form id="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-3x" style="color: #e4405f;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter fa-3x" style="color: #1da1f2;"></i></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p2>© 2024 ALPHA SPACES PVT LIMITED. All rights reserved.</p2>
+</footer>
+<script>
+
+    function submitForm() {
+        alert('Your slot has been booked');
+        document.getElementById("contactForm").reset();
+        return false; // Prevent default form submission behavior
+    }
+
+     // Select the appointments link and the ALPHA SPACES element
+    const appointmentsLink = document.getElementById('appointments-link');
+    const alphaSpaces = document.getElementById('alpha-spaces');
+
+    // Add event listeners for mouse enter and leave
+    appointmentsLink.addEventListener('mouseenter', function() {
+        // Add the class to change the color of ALPHA SPACES
+        alphaSpaces.classList.add('change-color');
+    });
+
+    appointmentsLink.addEventListener('mouseleave', function() {
+        // Remove the class when mouse leaves
+        alphaSpaces.classList.remove('change-color');
+    });
+
+</script>
+</body>
+</html>
